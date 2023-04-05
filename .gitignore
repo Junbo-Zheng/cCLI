@@ -1,0 +1,8 @@
+*.o
+.idea
+build
+*~
+
+.vscode
+.codechecker
+.cache

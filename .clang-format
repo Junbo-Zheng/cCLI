@@ -1,0 +1,43 @@
+# SPDX-License-Identifier: GPL-2.0
+#
+# clang-format configuration file. Intended for clang-format >= 4.
+#
+# For more information, see:
+#
+#   Documentation/process/clang-format.rst
+#   https://clang.llvm.org/docs/ClangFormat.html
+#   https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+#
+
+BasedOnStyle: WebKit
+ColumnLimit: 80
+PointerAlignment: Left
+AlignAfterOpenBracket: Align
+AlignTrailingComments: true
+AllowShortBlocksOnASingleLine: Never
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: false
+AlignConsecutiveDeclarations: None
+AllowShortLoopsOnASingleLine: false
+MaxEmptyLinesToKeep: 1
+AccessModifierOffset: -4
+AlignArrayOfStructures: Right
+AlignConsecutiveAssignments: false
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Left
+AlignOperands: Align
+TabWidth: 4
+UseTab: Never
+AlignEscapedNewlinesLeft: true
+AllowShortCaseLabelsOnASingleLine: false
+Cpp11BracedListStyle: false
+IndentWidth: 4
+SpaceBeforeAssignmentOperators: true
+SpacesBeforeTrailingComments:	4
+SpacesInAngles: false
+AllowAllArgumentsOnNextLine: false
+AllowShortEnumsOnASingleLine: false
+AlwaysBreakBeforeMultilineStrings: false
+InsertBraces: true
+NamespaceIndentation: All
