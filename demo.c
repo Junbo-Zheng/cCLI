@@ -16,6 +16,7 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 #include <time.h>
@@ -46,6 +47,15 @@ static void hello_func(const char** data)
     printf("cli hello func\n");
 }
 
+static void exit_func(const char** data)
+{
+    UNUSED(data);
+    printf("cli exit func\n");
+
+    printf("Bye bye~\n");
+    exit(0);
+}
+
 static void str2dec_func(const char** data)
 {
     printf("cli str2dec func, %s(str) %d(dec) %x(dec) %d(hex) %x(hex)\n",
@@ -66,6 +76,8 @@ int main(void)
     cli_register("test", "cli test", test_func);
     cli_register("date", "cli date", date_func);
     cli_register("hello", "hello",   hello_func);
+
+    cli_register("exit", "exit",     exit_func);
 
     cli_register("str2dec", "str to dec", str2dec_func);
     cli_register("str2hex", "str to hex", str2hex_func);
